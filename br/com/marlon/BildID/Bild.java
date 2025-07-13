@@ -1,7 +1,5 @@
 package br.com.marlon.BildID;
 import br.com.marlon.InputInfo.UserInput;
-import br.com.marlon.BildID.randomElements;
-
 
 public class Bild {
 
