@@ -1,4 +1,4 @@
-package br.com.MardevIDproject.br.com.marlon.bild.BildID;
+package br.com.marlon.BildID;
 
 
 public class Bild {
