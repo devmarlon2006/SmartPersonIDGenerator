@@ -36,7 +36,7 @@ Se você vir uma versão do Java (ex: `java version "17.0.2"`), você está pron
 
 ### 2\. Baixe o Arquivo Executável
 
-Faça o download do arquivo `.jar` do Gerador de ID. Ele geralmente estará disponível na seção de "Releases" do projeto. Por exemplo: `GeradorDeID-0.0.1-SNAPSHOT.jar` (o nome exato pode variar).
+Faça o download do arquivo `.jar` do Gerador de ID. Ele geralmente estará disponível na seção de "Releases" do projeto. Por exemplo: `GeradordeID-0.0.1-ALPHA.jar`.
 
 -----
 
