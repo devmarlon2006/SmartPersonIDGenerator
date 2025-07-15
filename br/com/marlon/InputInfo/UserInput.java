@@ -1,5 +1,4 @@
 package br.com.marlon.InputInfo;
-import br.com.marlon.IDcore.InfoClassElements;
 
 import java.util.Scanner;
 
