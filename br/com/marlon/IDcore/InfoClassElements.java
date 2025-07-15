@@ -1,15 +1,18 @@
 package br.com.marlon.IDcore;
 
+import br.com.marlon.InputInfo.UserInput;
+
 public class InfoClassElements {
-    String ID;
 
-    String name;
+    public String ID = "000000-0000";
 
-    int age;
+    public String name = "a";
 
-    String bornCountry;
+    public int age = 0;
 
-    String stateBornCountry;
+    public String bornCountry = "a";
+
+    public String stateBornCountry = "a";
 
 
 }

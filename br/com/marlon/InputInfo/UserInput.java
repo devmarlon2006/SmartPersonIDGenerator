@@ -1,10 +1,12 @@
 package br.com.marlon.InputInfo;
+import br.com.marlon.IDcore.InfoClassElements;
+
 import java.util.Scanner;
 
 
-public class UserInput {
+public class UserInput{
 
-    public String nameIN(){
+    public static String nameIN(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Name: ");
         String InputName = scanner.nextLine();
@@ -12,15 +14,14 @@ public class UserInput {
         return InputName;
     }
 
-    public int ageIN(){
+    public static int ageIN(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Age: ");
         int InputAge = scanner.nextInt();
-
         return InputAge;
     }
 
-    public String CountryIN(){
+    public static String CountryIN(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Country: ");
         String InputCountry = scanner.nextLine();
@@ -28,7 +29,7 @@ public class UserInput {
         return InputCountry;
     }
 
-    public String stateIN(){
+    public static String stateIN(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter State: ");
         String InputState = scanner.nextLine();

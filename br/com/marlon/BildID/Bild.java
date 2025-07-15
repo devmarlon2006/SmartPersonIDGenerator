@@ -1,15 +1,15 @@
 package br.com.marlon.BildID;
-import br.com.marlon.InputInfo.UserInput;
+import br.com.marlon.IDcore.person;
 
 public class Bild {
 
-    public String idNameBild(){
+    static public String idNameBild(String n1,String n10){
         IDelemnt newIDBild = new IDelemnt();
 
-        UserInput newIDBild1 = new UserInput();
+        person newIDBild1 = new person();
 
         String idNameBild1 = "";
-        String idchar1 = idNameBild1 + newIDBild.BildIDElement1(newIDBild1.nameIN());
+        String idchar1 = idNameBild1 + newIDBild.BildIDElement1(n1);
 
         String idchar2 = idNameBild1 + newIDBild.BildIDElement2();
 
@@ -27,7 +27,7 @@ public class Bild {
 
         String idchar9 = idNameBild1 + newIDBild.BildIDElement9();
 
-        String idchar10 = idNameBild1 + newIDBild.BildIDElement10();
+        String idchar10 = idNameBild1 + newIDBild.BildIDElement10( n10);
 
         String idchar11 = idNameBild1 + newIDBild.BildIDElement11();
 
@@ -196,9 +196,8 @@ class IDelemnt{
         return IDElement9;
     }
 
-    char BildIDElement10(){
-        char IDElement10 = '0';
-        return IDElement10;
+    char BildIDElement10(String IDElement10){
+        return IDElement10.charAt(0);
     }
 
     char BildIDElement11(){
