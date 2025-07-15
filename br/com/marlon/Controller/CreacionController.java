@@ -5,9 +5,9 @@ public class CreacionController {
 
     String[] al;
 
-    public void controllerIDCreacion(String n54, String nga){
+    public void controllerIDCreacion(String userName, String userState){
 
-        this.al = Bild.idNameBild( n54, nga );
+        this.al = Bild.idNameBild( userName, userState );
 
     }
 
