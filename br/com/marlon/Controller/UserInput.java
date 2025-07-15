@@ -1,4 +1,4 @@
-package br.com.marlon.InputInfo;
+package br.com.marlon.Controller;
 
 import java.util.Scanner;
 

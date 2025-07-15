@@ -1,6 +1,6 @@
 package br.com.marlon.IDcore;
 
-import br.com.marlon.InputInfo.UserInput;
+import br.com.marlon.Controller.UserInput;
 
 public class person extends InfoClassElements {
 
@@ -22,14 +22,11 @@ public class person extends InfoClassElements {
         return this.stateBornCountry = State553;
     }
 
-    public String name21(){
+    public String name21() {
         new UserInput();
         String  name654 = UserInput.nameIN();
         return this.name = name654;
     }
-
-
-    // ... seus métodos existentes ...
 
     public int getAge() {
         return this.age;

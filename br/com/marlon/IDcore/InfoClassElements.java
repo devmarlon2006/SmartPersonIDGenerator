@@ -1,7 +1,5 @@
 package br.com.marlon.IDcore;
 
-import br.com.marlon.InputInfo.UserInput;
-
 public class InfoClassElements {
 
     public String ID = "000000-0000";

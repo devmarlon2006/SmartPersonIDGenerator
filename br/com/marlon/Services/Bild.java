@@ -1,14 +1,14 @@
-package br.com.marlon.BildID;
-import br.com.marlon.IDcore.person;
+package br.com.marlon.Services;
 
 public class Bild {
 
-    static public String idNameBild(String n1,String n10){
+    public static String[] idNameBild(String n1,String n10){
+
         IDelemnt newIDBild = new IDelemnt();
 
-        person newIDBild1 = new person();
 
         String idNameBild1 = "";
+
         String idchar1 = idNameBild1 + newIDBild.BildIDElement1(n1);
 
         String idchar2 = idNameBild1 + newIDBild.BildIDElement2();
@@ -31,11 +31,28 @@ public class Bild {
 
         String idchar11 = idNameBild1 + newIDBild.BildIDElement11();
 
-        return idchar1 + idchar2 + idchar3 + idchar4 + idchar5 + idchar6 + idchar7 + idchar8 + idchar9 + idchar10 + idchar11;
+        String[] idcomplete = new String[11];
+        idcomplete[0] = idchar1;
+        idcomplete[1] = idchar2;
+        idcomplete[2] = idchar3;
+        idcomplete[3] = idchar4;
+        idcomplete[4] = idchar5;
+        idcomplete[5] = idchar6;
+        idcomplete[6] = idchar7;
+        idcomplete[7] = idchar8;
+        idcomplete[8] = idchar9;
+        idcomplete[9] = idchar10;
+        idcomplete[10] = idchar11;
+
+
+        return idcomplete;
+
+
     }
 
 
 }
+
 
 class IDelemnt{
 
