@@ -45,7 +45,7 @@ public class person extends InfoClassElements {
     }
 
     public String getState() {
-        return this.name;
+        return this.stateBornCountry;
     }
 
 
