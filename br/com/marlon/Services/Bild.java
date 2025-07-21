@@ -1,5 +1,9 @@
 package br.com.marlon.Services;
 
+import br.com.marlon.Services.ElementsLogic.randomElements;
+
+import java.util.Random;
+
 public class Bild {
 
     public static String[] idNameBild(String n1,String n10){
@@ -27,11 +31,37 @@ public class Bild {
 
         String idchar9 = idNameBild1 + newIDBild.BildIDElement9();
 
-        String idchar10 = idNameBild1 + newIDBild.BildIDElement10( n10);
+        String idchar10 = idNameBild1 + newIDBild.BildIDElement10();
 
-        String idchar11 = idNameBild1 + newIDBild.BildIDElement11();
+        String idchar11 = idNameBild1 + newIDBild.BildIDElement11(n10);
 
-        String[] idcomplete = new String[11];
+        String idchar12 = idNameBild1 + newIDBild.BildIDElement12();
+
+        String idchar13 = idNameBild1 + newIDBild.BildIDElement13();
+
+        String idchar14 = idNameBild1 + newIDBild.BildIDElement14();
+
+        String idchar15 = idNameBild1 + newIDBild.BildIDElement15();
+
+        String idchar16 = idNameBild1 + newIDBild.BildIDElement16();
+
+        String idchar17 = idNameBild1 + newIDBild.BildIDElement17();
+
+        String idchar18 = idNameBild1 + newIDBild.BildIDElement18();
+
+        String idchar19 = idNameBild1 + newIDBild.BildIDElement19();
+
+        String idchar20 = idNameBild1 + newIDBild.BildIDElement20();
+
+        String idchar21 = idNameBild1 + newIDBild.BildIDElement21();
+
+        String idchar22 = idNameBild1 + newIDBild.BildIDElement22();
+
+        String idchar23 = idNameBild1 + newIDBild.BildIDElement23();
+
+        String idchar24 = idNameBild1 + newIDBild.BildIDElement24();
+
+        String[] idcomplete = new String[24];
         idcomplete[0] = idchar1;
         idcomplete[1] = idchar2;
         idcomplete[2] = idchar3;
@@ -43,6 +73,19 @@ public class Bild {
         idcomplete[8] = idchar9;
         idcomplete[9] = idchar10;
         idcomplete[10] = idchar11;
+        idcomplete[11] = idchar12;
+        idcomplete[12] = idchar13;
+        idcomplete[13] = idchar14;
+        idcomplete[14] = idchar15;
+        idcomplete[15] = idchar16;
+        idcomplete[16] = idchar17;
+        idcomplete[17] = idchar18;
+        idcomplete[18] = idchar19;
+        idcomplete[19] = idchar20;
+        idcomplete[20] = idchar21;
+        idcomplete[21] = idchar22;
+        idcomplete[22] = idchar23;
+        idcomplete[23] = idchar24;
 
 
         return idcomplete;
@@ -169,14 +212,13 @@ class IDelemnt{
                 idchar1 = randomElements.elementRandom(allowedCharacters);
                 break;
 
-        };
+        }
 
         return idchar1;
     }
 
     char BildIDElement2(){
-        char IDElement2 = '0';
-        return IDElement2;
+        return '0';
     }
 
     char BildIDElement3(){
@@ -190,8 +232,7 @@ class IDelemnt{
     }
 
     char BildIDElement5(){
-        char IDElement5 = '0';
-        return IDElement5;
+        return '-';
     }
 
     char BildIDElement6(){
@@ -200,7 +241,7 @@ class IDelemnt{
     }
 
     char BildIDElement7(){
-        return '-';
+        return '0';
     }
 
     char BildIDElement8(){
@@ -213,14 +254,59 @@ class IDelemnt{
         return IDElement9;
     }
 
-    char BildIDElement10(String IDElement10){
+    char BildIDElement10(){
+        return '-';
+    }
+
+    char BildIDElement11(String IDElement10){
         return IDElement10.charAt(0);
     }
 
-    char BildIDElement11(){
-        char IDElement11 = '0';
-        return IDElement11;
+    char BildIDElement12(){
+        return '0';
     }
+
+    char BildIDElement13(){
+        return '0';
+    }
+    char BildIDElement14(){
+        return '0';
+    }
+    char BildIDElement15(){
+        return '-';
+    }
+
+    char BildIDElement16(){
+        return '0';
+    }
+
+    char BildIDElement17(){
+        return '0';
+    }
+
+    char BildIDElement18(){
+        return '0';
+    }
+    char BildIDElement19(){
+        return '0';
+    }
+    char BildIDElement20(){
+        return '-';
+    }
+
+    char BildIDElement21(){
+        return '0';
+    }
+    char BildIDElement22(){
+        return '0';
+    }
+    char BildIDElement23(){
+        return '0';
+    }
+    char BildIDElement24(){
+        return '0';
+    }
+
 
 }
 
