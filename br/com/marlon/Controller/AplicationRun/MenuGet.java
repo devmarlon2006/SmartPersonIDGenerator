@@ -23,10 +23,10 @@ public class MenuGet {
 
             switch (opcao) {
                 case 1:
-                    view.name21();
-                    view.age21();
-                    view.country21();
-                    view.stateBornCountry21();
+                    view.setName();
+                    view.setAge();
+                    view.setState();
+                    view.setBornCountry();
                     insetData = true;
                     System.out.println("Dados inseridos com sucesso!");
                     break;

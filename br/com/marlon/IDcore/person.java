@@ -4,28 +4,32 @@ import br.com.marlon.Controller.UserInput;
 
 public class person extends InfoClassElements {
 
-    public int age21() {
+    int age21() {
+        InfoClassElements infoClassElements = new InfoClassElements();
         new UserInput();
         int agert = UserInput.ageIN();
-        return this.age = agert;
+        return infoClassElements.setAge( agert );
     }
 
-    public String country21() {
+    String country21() {
+        InfoClassElements infoClassElements = new InfoClassElements();
         new UserInput();
         String  country776 = UserInput.CountryIN();
-        return this.bornCountry = country776;
+        return infoClassElements.setBornCountry( country776 );
     }
 
-    public String stateBornCountry21() {
+    String stateBornCountry21() {
+        InfoClassElements infoClassElements = new InfoClassElements();
         new UserInput();
         String  State553 = UserInput.stateIN();
-        return this.stateBornCountry = State553;
+        return infoClassElements.setStateBornCountry( State553 );
     }
 
-    public String name21() {
+    String name21() {
+        InfoClassElements infoClassElements = new InfoClassElements();
         new UserInput();
         String  name654 = UserInput.nameIN();
-        return this.name = name654;
+        return infoClassElements.setName(name654);
     }
 
     public int getAge() {
@@ -45,6 +49,21 @@ public class person extends InfoClassElements {
         return this.stateBornCountry;
     }
 
+    public void setBornCountry() {
+        this.bornCountry = this.country21();
+    }
+
+    public void setName() {
+        this.name = this.name21();
+    }
+
+    public void setState() {
+        this.stateBornCountry = this.stateBornCountry21();
+    }
+
+    public void setAge() {
+        this.age = this.age21();
+    }
 
 
 }
