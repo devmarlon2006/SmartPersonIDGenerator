@@ -32,22 +32,6 @@ public class person extends InfoClassElements {
         return infoClassElements.setName(name654);
     }
 
-    public int getAge() {
-        return this.age;
-    }
-
-    public String getBornCountry() {
-        return this.bornCountry;
-    }
-
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getState() {
-        return this.stateBornCountry;
-    }
 
     public void setBornCountry() {
         this.bornCountry = this.country21();

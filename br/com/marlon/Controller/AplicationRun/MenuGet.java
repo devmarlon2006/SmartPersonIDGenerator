@@ -36,17 +36,17 @@ public class MenuGet {
                         System.out.println("Nome:" + view.getName());
                         System.out.println("Idade:" + view.getAge());
                         System.out.println("País:" + view.getBornCountry());
-                        System.out.println("Estado:" + view.getState());
+                        System.out.println("Estado:" + view.getStateBornCountry());
                     } else {
                         System.out.println("Por favor, insira os dados primeiro (Opção 1) para visualizar.");
                     }
                     break;
                 case 3:
                     if (insetData) {
-                        if (view.getName().isEmpty() || view.getState().isEmpty()) {
+                        if (view.getName().isEmpty() || view.getStateBornCountry().isEmpty()) {
                             System.out.println("Informações Insuficientes para criar o ID. Por favor, preencha seus dados.");
                         } else {
-                            ctrl.controllerIDCreacion(view.getName(), view.getState());
+                            ctrl.controllerIDCreacion(view.getName(), view.getStateBornCountry());
                             System.out.println("ID criado com sucesso!");
                         }
                     } else {
