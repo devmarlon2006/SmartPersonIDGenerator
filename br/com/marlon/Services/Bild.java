@@ -17,7 +17,7 @@ public class Bild {
 
         String idchar3 = idNameBild1 + newIDBild.BildIDElement3();
 
-        String idchar4 = idNameBild1 + newIDBild.BildIDElement4();
+        String idchar4 = idNameBild1 + newIDBild.BildIDElement4(n1);
 
         String idchar5 = idNameBild1 + newIDBild.BildIDElement5();
 
@@ -217,17 +217,17 @@ class IDelemnt{
 
     char BildIDElement2(){
         new randomElements();
-        return randomElements.element2Con().charAt( 0 );
+        return randomElements.element2Con(7).charAt( 0 );
     }
 
     char BildIDElement3(){
         new randomElements();
-        return randomElements.element2Con().charAt( 1 );
+        return randomElements.element2Con(5).charAt( 0 );
     }
 
-    char BildIDElement4(){
-        char IDElement4 = '0';
-        return IDElement4;
+    char BildIDElement4(String name){
+        new  randomElements();
+        return randomElements.elementRandom3(name).charAt( 0 );
     }
 
     char BildIDElement5(){
