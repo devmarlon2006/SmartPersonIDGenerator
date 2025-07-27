@@ -2,11 +2,9 @@ package br.com.marlon.Services;
 
 import br.com.marlon.Services.ElementsLogic.randomElements;
 
-import java.util.Random;
-
 public class Bild {
 
-    public static String[] idNameBild(String n1,String n10){
+    public static String[] idNameBild(String n1,String n10, String n20, int n3){
 
         IDelemnt newIDBild = new IDelemnt();
 
@@ -218,12 +216,13 @@ class IDelemnt{
     }
 
     char BildIDElement2(){
-        return '0';
+        new randomElements();
+        return randomElements.elementRandom1();
     }
 
     char BildIDElement3(){
-        char IDElement3 = '0';
-        return IDElement3;
+        new randomElements();
+        return randomElements.elementRandom2();
     }
 
     char BildIDElement4(){

@@ -46,7 +46,7 @@ public class MenuGet {
                         if (view.getName().isEmpty() || view.getStateBornCountry().isEmpty()) {
                             System.out.println("Informações Insuficientes para criar o ID. Por favor, preencha seus dados.");
                         } else {
-                            ctrl.controllerIDCreacion(view.getName(), view.getStateBornCountry());
+                            ctrl.controllerIDCreacion(view.getName(), view.getStateBornCountry(), view.getBornCountry(), view.getAge());
                             System.out.println("ID criado com sucesso!");
                         }
                     } else {
