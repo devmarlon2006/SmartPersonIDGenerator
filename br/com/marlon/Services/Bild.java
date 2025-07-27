@@ -217,12 +217,12 @@ class IDelemnt{
 
     char BildIDElement2(){
         new randomElements();
-        return randomElements.elementRandom1();
+        return randomElements.element2Con().charAt( 0 );
     }
 
     char BildIDElement3(){
         new randomElements();
-        return randomElements.elementRandom2();
+        return randomElements.element2Con().charAt( 1 );
     }
 
     char BildIDElement4(){
