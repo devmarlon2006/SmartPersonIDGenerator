@@ -21,9 +21,9 @@ public class Bild {
 
         String idchar5 = idNameBild1 + newIDBild.BildIDElement5();
 
-        String idchar6 = idNameBild1 + newIDBild.BildIDElement6();
+        String idchar6 = idNameBild1 + newIDBild.BildIDElement6(n3);
 
-        String idchar7 = idNameBild1 + newIDBild.BildIDElement7();
+        String idchar7 = idNameBild1 + newIDBild.BildIDElement7(n3);
 
         String idchar8 = idNameBild1 + newIDBild.BildIDElement8();
 
@@ -234,13 +234,14 @@ class IDelemnt{
         return '-';
     }
 
-    char BildIDElement6(){
-        char IDElement6 = '0';
-        return IDElement6;
+    char BildIDElement6(int age){
+        new randomElements();
+        return randomElements.elementRandom4( age ).charAt( 0 );
     }
 
-    char BildIDElement7(){
-        return '0';
+    char BildIDElement7(int age){
+        new randomElements();
+        return randomElements.elementRandom5( age ).charAt( 0 );
     }
 
     char BildIDElement8(){
