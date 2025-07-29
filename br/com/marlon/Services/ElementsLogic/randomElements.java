@@ -5,13 +5,13 @@ import java.util.Random;
 
 
 public class randomElements {
-    public static char  elementRandom(String enterElement){
+    public static char  elementRandom(String name){
         Random random0 = new Random();
 
-        int randomIndex = random0.nextInt(enterElement.length());
+        int randomIndex = random0.nextInt(name.length());
 
 
-        return enterElement.charAt(randomIndex);
+        return name.charAt(randomIndex);
     }
 
 
@@ -27,7 +27,7 @@ public class randomElements {
         return random2.nextInt(9);
     }
 
-    public String element2Con(int number){
+    public static String element2Con(int number){
 
 
         int result;
@@ -65,6 +65,7 @@ public class randomElements {
     public static String elementRandom4(int age){
 
         Random random5 =  new Random();
+        
         double res;
 
 
@@ -75,7 +76,7 @@ public class randomElements {
                 res = Math.pow(age,2) - random5.nextInt(10) + 34 * 0.1 / 10;
             }
 
-        }while ( res >= 9);
+        }while ( res <= 9);
 
         return Integer.toString( (int) res );
 
@@ -97,6 +98,16 @@ public class randomElements {
 
 
         return Integer.toString( (int) res );
+    }
+
+    public static String elementRandom6(int age){
+
+        if (age < 10){
+            return  "%02" + age ;
+        }else {
+            return Integer.toString( age );
+        }
+
     }
 
 
