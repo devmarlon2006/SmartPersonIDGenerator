@@ -216,17 +216,16 @@ class IDelemnt{
     }
 
     char BildIDElement2(){
-        new randomElements();
-        return randomElements.element2Con(7).charAt( 0 );
+        randomElements ele1 = new randomElements();
+        return ele1.element2Con(7).charAt( 0 );
     }
 
     char BildIDElement3(){
-        new randomElements();
-        return randomElements.element2Con(5).charAt( 0 );
+        randomElements ele2 = new randomElements();
+        return ele2.element2Con(5).charAt( 0 );
     }
 
     char BildIDElement4(String name){
-        new  randomElements();
         return randomElements.elementRandom3(name).charAt( 0 );
     }
 
@@ -235,12 +234,10 @@ class IDelemnt{
     }
 
     char BildIDElement6(int age){
-        new randomElements();
         return randomElements.elementRandom4( age ).charAt( 0 );
     }
 
     char BildIDElement7(int age){
-        new randomElements();
         return randomElements.elementRandom5( age ).charAt( 0 );
     }
 

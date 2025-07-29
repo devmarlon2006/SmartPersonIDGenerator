@@ -1,5 +1,6 @@
 package br.com.marlon.Services.ElementsLogic;
 
+
 import java.util.Random;
 
 
@@ -26,7 +27,7 @@ public class randomElements {
         return random2.nextInt(9);
     }
 
-    public static String element2Con(int number){
+    public String element2Con(int number){
 
 
         int result;
