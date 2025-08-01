@@ -244,7 +244,7 @@ class IDelemnt{
     }
 
     char BildIDElement9(){
-        return '0';
+        return randomElements.elementRandom7( );
     }
 
     char BildIDElement10(){

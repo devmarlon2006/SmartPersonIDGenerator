@@ -110,5 +110,16 @@ public class randomElements {
 
     }
 
+    public static char elementRandom7(){
+        Random random = new Random();
+        String character;
+        char result;
+        
+        character = "ABCDEFGHIJKLMNOPKRSTUVWXWZabcdefghijklmnopqrstuvwxyz12345";
+        result = character.charAt( random.nextInt(24) );
+
+        return result;
+    }
+
 
 }
